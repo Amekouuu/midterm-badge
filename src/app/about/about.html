@@ -1,0 +1,39 @@
+<!-- HERO -->
+ <div class="body">
+  <section class="herobanner">
+  <h1>{{ 'about the help desk portal' | uppercase }}</h1>
+  <p>Learn more about what this portal does for the community.</p>
+</section>
+
+<!-- INFO STRIP -->
+<section class="info-strip">
+  <h2 class="heading">{{ 'All About Us' | uppercase }}</h2>
+  <p>Providing community support since 2024.</p>
+
+  <div class="system-status">
+    <strong>System Clock:</strong>
+    {{ today | date:'medium' }}
+  </div>
+</section>
+
+<section class="about-content">
+
+  <div class="card">
+    <h3>Our Purpose</h3>
+    <p>
+      This portal provides users with easy access to announcements,
+      updates, and service-related information in one place.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>How It Works</h3>
+    <p>
+      Data is fetched from a remote API and displayed in different
+      views to help users browse information efficiently.
+    </p>
+  </div>
+
+</section>
+ </div>
+

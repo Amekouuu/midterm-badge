@@ -1,0 +1,40 @@
+.navbar {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: orange;
+  padding: 12px 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 6px rgb(0, 0, 0);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+}
+
+.links a {
+  margin-left: 18px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: 0.2s ease;
+}
+
+.links a:hover {
+  background: black;
+  color: orange;
+  border-bottom: 3px solid black;
+  box-shadow: 0 2px 6px rgb(85, 85, 85);
+}
+
+.active {
+  background: orange;
+  border-bottom: 3px solid black;
+  box-shadow: 0 2px 6px rgb(0, 0, 0);
+}

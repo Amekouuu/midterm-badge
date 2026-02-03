@@ -1,0 +1,17 @@
+
+<div class="body">
+  <section class="herobanner">
+  <h1>Community Help Desk Portal</h1>
+  <p>Your central place for announcements and service updates.</p>
+</section>
+
+<section class="updates">
+  <h2>Latest Updates</h2>
+
+  <div class="card" *ngFor="let post of latest$ | async">
+    <h3>{{ post.title | uppercase }}</h3>
+    <p>{{ post.body | truncate:120 }}</p>
+  </div>
+</section>
+
+</div>

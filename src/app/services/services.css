@@ -1,0 +1,100 @@
+/* Container and Typography */
+.body {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background-color: white;
+  color: black;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Hero Section */
+.herobanner {
+  text-align: center;
+  padding: 40px 20px;
+  background: orange;
+  color: black;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.herobanner h1 { margin: 0; font-size: 2.5rem; }
+
+/* Search Bar Styling */
+.search-wrap {
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+}
+
+.search-wrap input {
+  width: 100%;
+  padding: 15px 25px;
+  border-radius: 50px; /* Rounded pill shape */
+  border: 2px solid #ddd;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.search-wrap input:focus {
+  border-color: orange;
+  box-shadow: 0 4px 20px rgba(255, 140, 0, 0.2);
+  outline: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card Design */
+.service-card {
+  background: white;
+  border-radius: 0 0 10px 10px;
+  border-bottom: 1px solid black;
+  overflow: hidden; /* Clips the accent bar */
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+}
+
+.ticket-id {
+  font-size: 12px;
+  font-weight: bold;
+  color: #ff8c00;
+  background: #fff5e6;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* The Accent Bar at the top of the card */
+.accent {
+  height: 12px;
+  background: linear-gradient(135deg, #ff8c00 0%, #ff5e00 100%);
+}
+
+.content {
+  padding: 20px;
+}
+
+.content h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: #222;
+  height: 3em; /* Ensures title alignment */
+  overflow: hidden;
+}
+
+.content p {
+  color: #666;
+  font-size: 0.95rem;
+}

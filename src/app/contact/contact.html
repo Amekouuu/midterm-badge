@@ -1,0 +1,22 @@
+<div class="body">
+  <section class="herobanner">
+    <h1>Contact Us</h1>
+    <p>Send us your details and preview them before submitting.</p>
+  </section>
+
+  <section class="contact-page">
+    <div class="form-card">
+      <form #f="ngForm">
+        <input name="name" ngModel placeholder="Your Name" />
+        <input name="email" ngModel placeholder="Your Email" />
+        <button type="button">Submit</button>
+      </form>
+    </div>
+
+    <div class="preview-card">
+      <h3>Form Preview</h3>
+      <p><strong>Name:</strong> {{ f.value.name | uppercase }}</p>
+      <p><strong>Email:</strong> {{ f.value.email }}</p>
+    </div>
+  </section>
+</div>
