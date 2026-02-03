@@ -1,67 +1,91 @@
 .body {
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 5px;
-  background:white;
+  background: #ffffff;
+  color: #000000;
 }
 
 .herobanner {
-  color: black;
   text-align: center;
   padding: 40px 20px;
   background: orange;
-  box-shadow: 0 2px 6px rgb(0, 0, 0);
-  margin-bottom: 25px;
+  color: #000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
 }
 
-.info-strip {
-  text-align: center;
-  margin-bottom: 25px;
+.herobanner h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
 }
 
-.heading {
-  border-bottom: 2px solid orange;
-  display: inline-block;
-  padding-bottom: 6px;
-  margin-bottom: 8px;
+.herobanner p {
+  font-size: 16px;
 }
 
-.system-status {
-  margin-top: 8px;
-  font-size: 14px;
-  color: orange;
-  background: black;
-  display: inline-block;
-  padding: 6px 12px;
-  border-radius: 4px;
-}
-
-.about-content {
+.contact-page {
+  display: flex;
+  gap: 20px;
   max-width: 900px;
   margin: auto;
+  flex-wrap: wrap;
 }
 
-.card {
-  background: white;
-  padding: 18px;
-  margin-bottom: 15px;
+.form-card,
+.preview-card {
+  background: #ffffff;
+  padding: 20px;
   border-radius: 6px;
-  border-bottom: 3px solid rgb(255, 123, 0);
-  border-left:3px solid rgb(255, 123, 0); ;
-  box-shadow: 0 2px 6px rgb(255, 123, 0);
+  border-left: 3px solid orange;
+  border-bottom: 3px solid orange;
+  box-shadow: 0 2px 6px rgba(255, 123, 0, 0.3);
+  flex: 1 1 400px; /* responsive width */
   transition: transform 0.2s ease;
 }
 
-.card:hover {
+.form-card:hover,
+.preview-card:hover {
   transform: translateY(-3px);
 }
 
-.card h3 {
-  margin-bottom: 8px;
-  font-size: 18px;
-  color: black;
+.form-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.card p {
+.form-card input {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
   font-size: 14px;
-  color: black;
+}
+
+.form-card button {
+  background: orange;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.form-card button:hover {
+  background: darkorange;
+}
+
+.preview-card h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.preview-card p {
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+.preview-card strong {
+  color: #000;
 }
